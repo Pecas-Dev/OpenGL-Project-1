@@ -1,3 +1,9 @@
+# Binaries
+/[Bb]in
+
+# Visual Studio
+*.vs
+
 # Prerequisites
 *.d
 
