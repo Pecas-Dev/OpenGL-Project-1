@@ -19,7 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\App.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\App.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\IndexBuffer\IndexBuffer.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\Renderer\Renderer.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\Shaders\Shaders.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\VertexArray\VertexArray.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\VertexBuffer\VertexBuffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\Shader.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGL1\include\OGL1\IndexBuffer\IndexBuffer.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\Renderer\Renderer.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\Shaders\Shaders.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\VertexArray\VertexArray.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\VertexBufferLayout\VertexBufferLayout.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\VertexBuffer\VertexBuffer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -76,10 +92,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>OpenGL1/include/;OpenGL1/source/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>OpenGL1/include/;OpenGL1/source/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
