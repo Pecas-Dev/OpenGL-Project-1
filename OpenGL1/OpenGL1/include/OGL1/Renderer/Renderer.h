@@ -22,5 +22,4 @@ private:
 public:
 	void Draw(const VertexArray& vertexArray, const IndexBuffer& indexBuffer, const Shaders& shader) const;
 	void Clear() const;
-
 };

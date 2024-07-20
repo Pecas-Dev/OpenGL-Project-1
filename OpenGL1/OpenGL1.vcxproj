@@ -19,23 +19,298 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="OpenGL1\include\vendor\glm\detail\glm.cpp" />
+    <ClCompile Include="OpenGL1\include\vendor\imGUI\imgui.cpp" />
+    <ClCompile Include="OpenGL1\include\vendor\imGUI\imgui_demo.cpp" />
+    <ClCompile Include="OpenGL1\include\vendor\imGUI\imgui_draw.cpp" />
+    <ClCompile Include="OpenGL1\include\vendor\imGUI\imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="OpenGL1\source\OGL1\App.cpp" />
     <ClCompile Include="OpenGL1\source\OGL1\IndexBuffer\IndexBuffer.cpp" />
     <ClCompile Include="OpenGL1\source\OGL1\Renderer\Renderer.cpp" />
     <ClCompile Include="OpenGL1\source\OGL1\Shaders\Shaders.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\Tests\TestClearColor.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\Tests\Tests.cpp" />
+    <ClCompile Include="OpenGL1\source\OGL1\Textures\Textures.cpp" />
     <ClCompile Include="OpenGL1\source\OGL1\VertexArray\VertexArray.cpp" />
     <ClCompile Include="OpenGL1\source\OGL1\VertexBuffer\VertexBuffer.cpp" />
+    <ClCompile Include="OpenGL1\source\vendor\stb_image\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Shader.shader" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_common.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_common_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_exponential.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_exponential_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_geometric.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_geometric_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_integer.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_integer_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_matrix.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_matrix_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_packing.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_packing_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_trigonometric.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_trigonometric_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_vector_relational.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\func_vector_relational_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_gentype.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_half.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat2x2.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat2x3.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat2x4.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat3x2.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat3x3.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat3x4.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat4x2.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat4x3.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat4x4.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_mat4x4_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_vec.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_vec1.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_vec2.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_vec3.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_vec4.inl" />
+    <None Include="OpenGL1\include\vendor\glm\detail\type_vec4_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\bitfield.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\color_encoding.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\color_space.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\constants.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\epsilon.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\functions.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\integer.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\matrix_access.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\matrix_inverse.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\matrix_transform.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\noise.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\packing.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\quaternion.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\quaternion_simd.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\random.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\reciprocal.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\round.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\type_precision.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\type_ptr.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\ulp.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtc\vec1.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\associated_min_max.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\bit.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\closest_point.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\color_space.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\color_space_YCoCg.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\common.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\compatibility.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\component_wise.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\dual_quaternion.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\euler_angles.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\extend.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\extended_min_max.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\fast_exponential.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\fast_square_root.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\fast_trigonometry.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\float_notmalize.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\gradient_paint.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\handed_coordinate_space.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\hash.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\integer.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\intersect.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\io.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\log_base.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_cross_product.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_decompose.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_interpolation.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_major_storage.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_operation.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_query.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\matrix_transform_2d.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\mixed_product.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\norm.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\normal.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\normalize_dot.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\number_precision.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\optimum_pow.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\orthonormalize.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\perpendicular.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\polar_coordinates.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\projection.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\quaternion.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\raw_data.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\rotate_normalized_axis.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\rotate_vector.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\scalar_relational.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\spline.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\std_based_type.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\string_cast.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\transform.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\transform2.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\type_aligned.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\type_trait.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\vector_angle.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\vector_query.inl" />
+    <None Include="OpenGL1\include\vendor\glm\gtx\wrap.inl" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGL1\include\OGL1\IndexBuffer\IndexBuffer.h" />
     <ClInclude Include="OpenGL1\include\OGL1\Renderer\Renderer.h" />
     <ClInclude Include="OpenGL1\include\OGL1\Shaders\Shaders.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\Tests\TestClearColor.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\Tests\Tests.h" />
+    <ClInclude Include="OpenGL1\include\OGL1\Textures\Textures.h" />
     <ClInclude Include="OpenGL1\include\OGL1\VertexArray\VertexArray.h" />
     <ClInclude Include="OpenGL1\include\OGL1\VertexBufferLayout\VertexBufferLayout.h" />
     <ClInclude Include="OpenGL1\include\OGL1\VertexBuffer\VertexBuffer.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\common.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_common.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_exponential.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_geometric.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_integer.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_matrix.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_packing.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_trigonometric.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\func_vector_relational.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\precision.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\setup.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_float.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_gentype.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_half.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_int.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat2x2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat2x3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat2x4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat3x2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat3x3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat3x4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat4x2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat4x3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_mat4x4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_vec.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_vec1.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_vec2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_vec3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\type_vec4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\_features.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\_fixes.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\_noise.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\_swizzle.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\_swizzle_func.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\detail\_vectorize.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\exponential.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\ext.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\fwd.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\geometric.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\glm.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\bitfield.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\color_space.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\constants.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\epsilon.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\functions.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\integer.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\matrix_access.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\matrix_integer.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\matrix_inverse.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\matrix_transform.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\noise.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\packing.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\quaternion.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\random.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\reciprocal.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\round.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\type_aligned.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\type_precision.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\type_ptr.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\ulp.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtc\vec1.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\associated_min_max.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\bit.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\closest_point.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\color_space.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\color_space_YCoCg.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\common.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\compatibility.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\component_wise.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\dual_quaternion.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\euler_angles.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\extend.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\extended_min_max.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\fast_exponential.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\fast_square_root.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\fast_trigonometry.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\gradient_paint.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\handed_coordinate_space.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\hash.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\integer.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\intersect.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\io.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\log_base.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_cross_product.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_decompose.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_interpolation.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_major_storage.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_operation.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_query.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\matrix_transform_2d.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\mixed_product.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\norm.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\normal.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\normalize_dot.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\number_precision.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\optimum_pow.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\orthonormalize.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\perpendicular.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\polar_coordinates.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\projection.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\quaternion.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\range.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\raw_data.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\rotate_normalized_axis.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\rotate_vector.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\scalar_multiplication.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\scalar_relational.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\spline.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\std_based_type.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\string_cast.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\transform.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\transform2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\type_aligned.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\type_trait.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\vector_angle.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\vector_query.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\gtx\wrap.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\integer.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat2x2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat2x3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat2x4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat3x2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat3x3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat3x4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat4x2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat4x3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\mat4x4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\matrix.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\packing.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\common.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\exponential.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\geometric.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\integer.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\matrix.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\packing.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\platform.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\trigonometric.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\simd\vector_relational.h" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\trigonometric.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\vec2.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\vec3.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\vec4.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\glm\vector_relational.hpp" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\imconfig.h" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\imgui.h" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\imgui_impl_glfw_gl3.h" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\imgui_internal.h" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\stb_rect_pack.h" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\stb_textedit.h" />
+    <ClInclude Include="OpenGL1\include\vendor\imGUI\stb_truetype.h" />
+    <ClInclude Include="OpenGL1\include\vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -92,12 +367,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>OpenGL1/include/;OpenGL1/source/;$(IncludePath)</IncludePath>
+    <IncludePath>OpenGL1/include/;OpenGL1/vendor/;OpenGL1/source/;OpenGL1/vendor/Math/glm/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>OpenGL1/include/;OpenGL1/source/;$(IncludePath)</IncludePath>
+    <IncludePath>OpenGL1/include/;OpenGL1/vendor/;OpenGL1/source/;OpenGL1/vendor/Math/glm/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -105,7 +380,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;OpenGL1\include\vendor</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,7 +397,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;OpenGL1\include\vendor</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
