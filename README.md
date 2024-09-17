@@ -49,7 +49,7 @@ void main()
 Renders the texture color on the object, blending it with the background color.
 
 ```glsl
-ayout (location = 0) out vec4 color;
+layout (location = 0) out vec4 color;
 
 in vec2 vTextureCoordinates;
 
