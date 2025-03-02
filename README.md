@@ -1,11 +1,14 @@
-
 # OpenGL1 Texture Rendering Project with Dear ImGUI
 
  <br>
 
+---
+
 ## Project Description
 
-This project showcases texture rendering in OpenGL, using custom shaders and UI controls built with Dear ImGUI. The program renders two textures of Yoshi, the popular character from Super Mario, on two separate squares, allowing real-time control of their positions and background color through the UI. Developed entirely from scratch, this project explores OpenGL’s rendering pipeline, including vertex and fragment shaders, buffers, and texture handling. The use of Dear ImGUI demonstrates the integration of UI elements to control and modify object properties dynamically.
+This project showcases **texture rendering in OpenGL**, using **custom shaders** and **UI controls built with Dear ImGUI**. The program renders two textures of [**Yoshi**](https://play.nintendo.com/themes/friends/yoshi/), on two separate squares, allowing **real-time control** of their **positions** and **background color** through the UI. Developed entirely from scratch, this project explores OpenGL’s rendering pipeline, including vertex and fragment shaders, buffers, and texture handling. The use of Dear ImGUI demonstrates the integration of UI elements to control and modify object properties dynamically.
+
+---
 
  <br>
 
@@ -22,12 +25,14 @@ This project showcases texture rendering in OpenGL, using custom shaders and UI 
 - **Textures**: Two Yoshi textures are rendered on two squares, created from triangles.
 - **UI Controls**: Dear ImGUI integration to allow real-time modification of texture positions and background color.
 
----------------------------------
+---
 
+ <br>
 
 ## Shaders
 
 ### Vertex Shader
+
 Handles the transformation of 3D coordinates into screen space and passes texture coordinates to the fragment shader.
 
 ```glsl
@@ -46,6 +51,7 @@ void main()
 ```
 
 ### Fragment Shader
+
 Renders the texture color on the object, blending it with the background color.
 
 ```glsl
@@ -63,30 +69,93 @@ void main()
 }
 ```
 
-## Directory Structure
-- **Dependencies**: External libraries like GLEW and GLFW required for OpenGL rendering.
-- **Release**: Contains the final executable of the project.
-- **OpenGL1**: The main project folder containing:
-- **Assets**: Stores shaders and textures used in the project.
-- **Include**: Contains header files, including external libraries like glm, ImGUI, and stb_image.
-- **Source**: Contains C++ source files and main.cpp (App.cpp).
+ <br>
 
-## How to Run
+---
+
+## Directory Structure
+
+```
+Project Root
+├── OpenGL1.sln                      // Visual Studio solution file
+├── .gitattributes
+├── .gitignore
+├── bin                              // Binary files
+├── Dependencies                     // External dependencies
+│   ├── x86
+│   │   ├── GLEW
+│   │   └── GLFW
+│   └── x64
+│       ├── GLEW
+│       └── GLFW
+│
+├── Release                          // Pre-compiled executables
+│   ├── OpenGL1_x64.bat              // Run x64 OpenGL1
+│   ├── OpenGL1_x86.bat              // Run x86 OpenGL1
+│   └── Platforms
+│       ├── x64                      // 64-bit builds
+│       │   └── OGL-P1               // Contains the necessary files to run the executable.
+│       │       └── Assets
+│       │           ├── Shaders
+│       │           └── Textures
+│       └── Win32                    // 32-bit builds
+│           └── OGL-P1               // Contains the necessary files to run the executable.
+│               └── Assets
+│                   ├── Shaders
+│                   └── Textures
+│
+└── OpenGL1
+    ├── Assets                       // Stores shaders, and textures.
+    │   ├── Textures
+    │   └── Shaders
+    │
+    └── Project                      // Contains the source code for the M.I.C.R.O Graphics Engine.
+        ├── include
+        └── source
+```
+
+---
+
+<br>
+
+## Installation & Running
+
+<br>
+
+**Clone the repository:**
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/Pecas-Dev/OpenGL-Project-1.git
 ```
-2. Navigate to the Release folder within the project directory. Inside, you will find an executable that allows you to run the app directly.
 
-3. If you prefer to build the project manually, open the solution in Visual Studio, choose the x86 Platform, and build the project.
+### Pre-compiled Executables
 
-4. Once the program is running, you can use the Dear ImGUI interface to manipulate the textures and background color in real-time.
-   
+The easiest way to run the simulation is using the pre-compiled executables:
+
+1. Navigate to the `Release` folder.
+2. Choose the appropriate version for your system (`x64` or `86`).
+3. Run the `OpenGL1_x64.bat` or `OpenGL1_x86.bat`or file.
+
+### Building from Source
+
+To build the project from source:
+
+1. Open `OpenGL1.sln` in Visual Studio.
+2. Choose your configuration (**Debug/Release**) and platform (**x64/x86**).
+3. Build the solution.
+4. Run the program.
+
+<br>
+
+---
+
 ## Controls
 
 - Use Dear ImGUI UI controls to move textures and change the background color.
+
+<br>
 
 ## Credits
 
