@@ -109,7 +109,7 @@ Project Root
     │   ├── Textures
     │   └── Shaders
     │
-    └── Project                      // Contains the source code for the M.I.C.R.O Graphics Engine.
+    └── Project                      // Contains the source code for the OpenGL1 Project.
         ├── include
         └── source
 ```
