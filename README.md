@@ -124,8 +124,6 @@ Project Root
 
 **Clone the repository:**
 
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/Pecas-Dev/OpenGL-Project-1.git
 ```
